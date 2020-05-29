@@ -1,0 +1,46 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(83, 6, 114, 0.966);
+    overflow: hidden;
+}
+
+.inner_text {
+  
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+    list-style: -2px;
+    text-transform: uppercase;
+    
+}
+
+.inner_line {
+    height: 50px;
+    overflow: hidden;
+}
+
+p {
+    margin: 0;
+    height: 50px;
+    line-height: 50px;
+    transition: all0.5s ease-in-out;
+}
+
+.inner_line:nth-child(add) {
+    transform: skew(60deg, -30dag) scaleY(0.667);
+}
+
+.inner_line:nth-child(even) {
+    transform: skew(0deg, -30dag) scaleY(1.333);
+}
+
+.inner_line:hover p{
+    transform: translate(0, -50px);
+}
